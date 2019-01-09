@@ -46,7 +46,7 @@ This is an `AbstractFactoryBean` implementation to expose a `StreamsBuilder` sin
 [source, java]
 ----
 @Bean
-public FactoryBean<StreamsBuilderFactoryBean> myKStreamBuilder(KafkaStreamsConfiguration streamsConfig) {
+public FactoryBean<StreamsBuilder> myKStreamBuilder(KafkaStreamsConfiguration streamsConfig) {
     return new StreamsBuilderFactoryBean(streamsConfig);
 }
 ----
